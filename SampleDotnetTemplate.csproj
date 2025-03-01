@@ -1,9 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <VersionPrefix>0.0.1</VersionPrefix>
+    <PackageId>kinneko-de.sample.dotnet.template</PackageId>
+    <Title>KinNeko-De sample dotnet template</Title>
+    <Authors>Nils Diekmann</Authors>
+    <Description>Sample for dotnet templates</Description>
+    <PackageTags>dotnet-new;templates</PackageTags>
     <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
   </PropertyGroup>
 
 </Project>
