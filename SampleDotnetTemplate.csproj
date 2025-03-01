@@ -12,6 +12,16 @@
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
+    <ContinuousIntegrationBuild>True</ContinuousIntegrationBuild>
+    <RepositoryUrl>https://github.com/KinNeko-De/sample-dotnet-template</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="README.md" PackagePath="/"/>
+  </ItemGroup>
 
 </Project>
