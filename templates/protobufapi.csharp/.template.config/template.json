@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Nils Diekmann",
+    "classifications": [ "Web", "API", "Protobuf" ],
+    "name": "Protobuf API",
+    "identity": "Sample.Dotnet.Template.ProtobufApi.CSharp",
+    "groupIdentity": "Sample.Dotnet.Template.ProtobufApi",
+    "shortName": "protobufapi",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    }
+  }
