@@ -9,5 +9,14 @@
     "tags": {
       "language": "C#",
       "type": "project"
+    },
+    "symbols": {
+      "protoRoot": {
+        "type": "parameter",
+        "isRequired": true,
+        "datatype": "string",
+        "description": "The relative path to the root folder containing the protobuf files. Example: ../../../proto",
+        "replaces": "ProtoRoot.1"
+      }
     }
   }
