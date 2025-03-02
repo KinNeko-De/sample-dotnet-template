@@ -3,6 +3,9 @@
 ##
 ## Get latest from `dotnet new gitignore`
 
+# generated templates
+[Tt]est[Oo]utput/
+
 # dotenv files
 .env
 
