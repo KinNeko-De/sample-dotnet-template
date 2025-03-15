@@ -81,6 +81,40 @@
           "toLower": true
         },
         "replaces": "api_identifier.1"
+      },
+      "framework": {
+        "type": "parameter",
+        "description": "TargetFramework for the protobuf api",
+        "datatype": "choice",
+        "choices": [
+          {
+            "choice": "net8.0",
+            "description": ".Net 8"
+          },
+          {
+            "choice": "net9.0",
+            "description": ".Net 9"
+          }
+        ],
+        "defaultValue": "net8.0",
+        "allowMultipleValues": true
+      },
+      "targetFramework" : {
+        "type": "generated",
+        "datatype": "string",
+        "generator": "join",
+        "description": "All target framework in a valid format for the project file",
+        "parameters": {
+          "symbols": [
+            {
+              "type": "ref",
+              "value": "framework"
+            }
+          ],
+          "separator": ";",
+          "removeEmptyValues": true
+        },
+        "replaces": "targetFramework.1"
       }
     }
   }
