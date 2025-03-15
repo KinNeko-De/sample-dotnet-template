@@ -51,6 +51,36 @@
           "toLower": true
         },
         "replaces": "apiproject.1"
+      },
+      "apiidentifier": {
+        "type": "parameter",
+        "datatype": "string",
+        "isRequired": true,
+        "description": "API identifiers use PascalCase, combining a verb and a noun. Example: OrderProduct",
+        "replaces": "ApiIdentifier.1",
+        "fileRename": "ApiIdentifier.1"
+      },
+      "apiidentifier-filepath": {
+        "type": "generated",
+        "generator": "regex",
+        "parameters": {
+          "source": "apiidentifier",
+          "steps": [
+            {
+              "regex": "([A-Z][a-z]+)([A-Z][a-z]+)",
+              "replacement": "$2_$1"
+            }
+          ]
+        }
+      },
+      "apiidentifier-filepath-lower": {
+        "type": "generated",
+        "generator": "casing",
+        "parameters": {
+          "source": "apiidentifier-filepath",
+          "toLower": true
+        },
+        "replaces": "api_identifier.1"
       }
     }
   }
