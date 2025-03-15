@@ -34,6 +34,23 @@
           "toLower": true
         },
         "replaces": "company.1"
+      },
+      "apiproject": {
+        "type": "parameter",
+        "datatype": "string",
+        "isRequired": true,
+        "description": "A project groups different api together. Example: ECommerce",
+        "replaces": "ApiProject.1",
+        "fileRename": "ApiProject.1"
+      },
+      "apiproject-lower": {
+        "type": "generated",
+        "generator": "casing",
+        "parameters": {
+          "source": "apiproject",
+          "toLower": true
+        },
+        "replaces": "apiproject.1"
       }
     }
   }
