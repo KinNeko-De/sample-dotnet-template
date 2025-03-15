@@ -14,8 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Protobuf Include="ProtoRoot.1/kindatta/ecommerce/product_order/**/*.proto" ProtoRoot="ProtoRoot.1">
-      <Link>kindatta/ecommerce/product_order/%(RecursiveDir)%(Filename)%(Extension)</Link>
+    <Protobuf Include="ProtoRoot.1/company.1/ecommerce/product_order/**/*.proto" ProtoRoot="ProtoRoot.1">
+      <Link>company.1/ecommerce/product_order/%(RecursiveDir)%(Filename)%(Extension)</Link>
     </Protobuf>
   </ItemGroup>
 

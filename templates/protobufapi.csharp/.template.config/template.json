@@ -17,6 +17,23 @@
         "datatype": "string",
         "description": "The relative path to the root folder containing the protobuf files. Example: ../../../proto",
         "replaces": "ProtoRoot.1"
+      },
+      "company": {
+        "type": "parameter",
+        "datatype": "string",
+        "isRequired": true,
+        "description": "The company which owns the API use PascalCase. Example: Kindatta",
+        "replaces": "Company.1",
+        "fileRename": "Company.1"
+      },
+      "company-lower": {
+        "type": "generated",
+        "generator": "casing",
+        "parameters": {
+          "source": "company",
+          "toLower": true
+        },
+        "replaces": "company.1"
       }
     }
   }
